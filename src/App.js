@@ -4,6 +4,7 @@ import TeamList from './views/Teams/Teams';
 import TeamDetail from './views/Teams/Team';
 import PlayerDetail from './views/Players/Player';
 import PlayerList from './views/Players/Players';
+import Home from './views/Home/Home';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <NavLink to="/players"> Players </NavLink>
         </header>
         <Switch>
+          <Route Path="/" exactcomponent={Home} />
           <Route Path="/teams/:id" component={TeamDetail} />
           <Route Path="/teams" component={TeamList} />
           <Route Path="/players/:id" component={PlayerDetail} />
