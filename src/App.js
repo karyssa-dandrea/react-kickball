@@ -1,9 +1,9 @@
 import './App.css';
 import { BrowserRouter, NavLink, Route, Switch } from 'react-router-dom';
-import TeamList from './views/Teams/TeamList';
-import TeamDetail from './views/Teams/TeamDetail';
-import PlayerDetail from './views/Players/PlayerDetail';
-import PlayerList from './views/Players/PlayerList';
+import TeamList from './views/Teams/Teams';
+import TeamDetail from './views/Teams/Team';
+import PlayerDetail from './views/Players/Player';
+import PlayerList from './views/Players/Players';
 
 function App() {
   return (
