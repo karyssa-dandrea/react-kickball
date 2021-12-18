@@ -1,10 +1,9 @@
 import './App.css';
 import { BrowserRouter, NavLink, Route, Switch } from 'react-router-dom';
-import TeamList from './views/Teams/Teams';
-import TeamDetail from './views/Teams/Team';
-import PlayerDetail from './views/Players/Player';
-import PlayerList from './views/Players/Players';
-import Home from './views/Home/Home';
+import Teams from './views/Teams/Teams';
+import Team from './views/Teams/Team';
+import Player from './views/Players/Player';
+import Players from './views/Players/Players';
 
 function App() {
   return (
@@ -13,13 +12,16 @@ function App() {
         <header>
           <NavLink to="/teams"> Teams </NavLink>
           <NavLink to="/players"> Players </NavLink>
+          <NavLink to="/">Home</NavLink>
         </header>
         <Switch>
-          <Route Path="/" exactcomponent={Home} />
-          <Route Path="/teams/:id" component={TeamDetail} />
-          <Route Path="/teams" component={TeamList} />
-          <Route Path="/players/:id" component={PlayerDetail} />
-          <Route Path="/players" component={PlayerList} />
+          <Route path="/teams/:id" component={Team} />
+          <Route path="/teams" component={Teams} />
+          <Route path="/players/:id" component={Player} />
+          <Route path="/players" component={Players} />
+          <Route path="/">
+            <h1> Welcome to the Home Page!</h1>
+          </Route>
         </Switch>
       </BrowserRouter>
     </main>
