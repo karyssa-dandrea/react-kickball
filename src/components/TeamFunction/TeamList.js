@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import TeamDetail from '../../views/Teams/Team';
+import TeamDetail from '../../components/TeamFunction/TeamDetail';
 
 export default function TeamList({ teams }) {
   return (
