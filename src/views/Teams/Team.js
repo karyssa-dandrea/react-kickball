@@ -3,18 +3,21 @@ import TeamDetail from '../../components/TeamFunction/TeamDetail';
 import { fetchTeamById } from '../../services/teams';
 import { useEffect, useState } from 'react';
 
-export default function Team() {
+export default function Team(props) {
   const [team, setTeam] = useState([]);
+  const id = props.match.params.id;
   useEffect(() => {
     const fetchData = async () => {
-      const data = await fetchTeamById();
+      const data = await fetchTeamById(id);
       setTeam(data);
     };
     fetchData();
-  }, []);
+  }, [id]);
   return (
-    <div>
-      <TeamDetail></TeamDetail>
+    <div className="team-deets">
+      <p>{team.name}</p>
+      <p>{team.city}</p>
+      <TeamDetail team={team}></TeamDetail>
     </div>
   );
 }
