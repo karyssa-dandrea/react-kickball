@@ -4,18 +4,20 @@ import PlayerDetail from '../../components/PlayerFunction/PlayerDetail';
 
 export default function PlayerList({ players }) {
   return (
-    <div>
+    <>
       <h1>List of Players</h1>
-      <ul>
-        {players.map((player) => (
-          <li key={player.id}>
-            <Link to={`/players/${player.id}`}>
-              {player.name}
-              <PlayerDetail player={player} />
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
+      <div>
+        <ul>
+          {players.map((players) => (
+            <li key={players.id}>
+              <Link to={`/players/${players.id}`}>
+                {players.name}
+                <PlayerDetail player={players} />
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
   );
 }
