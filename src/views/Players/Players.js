@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { fetchPlayers } from '../../services/players';
 import PlayerList from './Players';
-export default function Player() {
+export default function Players() {
   const [players, setPlayers] = useState([]);
 
   useEffect(() => {
