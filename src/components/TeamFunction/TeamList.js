@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import TeamDetail from '../../components/TeamFunction/TeamDetail';
+// import TeamDetail from '../../components/TeamFunction/TeamDetail';
 
 export default function TeamList({ teams }) {
   return (
@@ -8,9 +8,9 @@ export default function TeamList({ teams }) {
       <ul>
         {teams.map((team) => (
           <li key={team.id}>
-            <Link to={`/teams/${team.id}`}>
+            <Link key={team.id} to={`/teams/${team.id}`}>
               {team.name}
-              <TeamDetail team={team} />
+              {/* <TeamDetail team={team} /> */}
             </Link>
           </li>
         ))}

@@ -1,4 +1,5 @@
 import React from 'react';
+import './TeamDetail.css';
 
 export default function TeamDetail({ team }) {
   return (

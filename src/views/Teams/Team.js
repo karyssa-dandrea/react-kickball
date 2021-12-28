@@ -6,20 +6,28 @@ import { useEffect, useState } from 'react';
 export default function Team(props) {
   const [team, setTeam] = useState([]);
   const id = props.match.params.id;
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetchTeamById(id);
       setTeam(data);
+      setLoading(false);
     };
     fetchData();
   }, [id]);
+  if (loading) {
+    return <h1>Loading</h1>;
+  }
   return (
-    <div className="team-deets">
-      <p>{team.name}</p>
-      <p>{team.city}</p>
-      <p>{team.state}</p>
-      <TeamDetail team={team}></TeamDetail>
-    </div>
+    <>
+      <div className="team-deets">
+        <p>{team.name}</p>
+        <p>{team.city}</p>
+        <p>{team.state}</p>
+        <TeamDetail team={team} />
+      </div>
+    </>
   );
 }
 

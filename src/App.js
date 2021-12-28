@@ -15,11 +15,11 @@ function App() {
           <NavLink to="/">Home</NavLink>
         </header>
         <Switch>
-          <Route path="/teams/:id" component={Team} />
-          <Route path="/teams" component={Teams} />
-          <Route path="/players/:id" component={Player} />
-          <Route path="/players" component={Players} />
-          <Route path="/">
+          <Route exact path="/teams" component={Teams} />
+          <Route exact path="/teams/:id" component={Team} />
+          <Route exact path="/players" component={Players} />
+          <Route exact path="/players/:id" component={Player} />
+          <Route exact path="/">
             <h1> Welcome to the Home Page!</h1>
           </Route>
         </Switch>
