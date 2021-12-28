@@ -14,8 +14,9 @@ export default function Player(props) {
     fetchData();
   }, [id]);
   return (
-    <div>
+    <div className="player-deets">
       <h1>Players</h1>
+      <p>{player.name}</p>
       <PlayerDetail players={player} />
     </div>
   );
