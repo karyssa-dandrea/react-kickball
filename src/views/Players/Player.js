@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { fetchPlayers } from '../../services/players';
+import { fetchPlayerById } from '../../services/players';
 import PlayerList from './Players';
 export default function Player(props) {
   const [players, setPlayers] = useState([]);
@@ -8,7 +8,7 @@ export default function Player(props) {
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await fetchPlayers(id);
+      const data = await fetchPlayerById(id);
       setPlayers(data);
     };
     fetchData();
