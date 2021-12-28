@@ -17,6 +17,7 @@ export default function Team(props) {
     <div className="team-deets">
       <p>{team.name}</p>
       <p>{team.city}</p>
+      <p>{team.state}</p>
       <TeamDetail team={team}></TeamDetail>
     </div>
   );
