@@ -1,16 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PlayerDetail from '../../components/PlayerFunction/PlayerDetail';
 
 export default function PlayerList({ players }) {
   return (
-    <div>
+    <div className="players-list">
+      <h1>List of Players</h1>
       <ul>
         {players.map((players) => (
           <li key={players.id}>
-            <Link to={`/players/${players.id}`}>
+            <Link key={players.id} to={`/players/${players.id}`}>
               {players.name}
-              <PlayerDetail player={players} />
             </Link>
           </li>
         ))}
