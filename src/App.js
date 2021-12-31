@@ -24,7 +24,7 @@ function App() {
           </Route>
         </Switch>
       </BrowserRouter>
-    </main>ß
+    </main>
   );
 }
 
