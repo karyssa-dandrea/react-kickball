@@ -1,7 +1,9 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { fetchPlayerById } from '../../services/players';
-import PlayerDetail from './Players';
+import PlayerDetail from '../../components/PlayerFunction/PlayerDetail';
+import './Players.css';
+
 export default function Player(props) {
   const [player, setPlayer] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -22,7 +24,6 @@ export default function Player(props) {
 
   return (
     <div className="player-deets">
-      <h1>Players</h1>
       <p>{player.name}</p>
       <PlayerDetail player={player} />
     </div>

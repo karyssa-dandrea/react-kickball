@@ -2,6 +2,8 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { fetchPlayers } from '../../services/players';
 import PlayerList from '../../components/PlayerFunction/PlayerList';
+import './Players.css';
+
 export default function Players() {
   const [players, setPlayers] = useState([]);
 
@@ -14,7 +16,7 @@ export default function Players() {
   }, []);
   return (
     <div>
-      <h1>Players</h1>
+      <h1>List of Players</h1>
       <PlayerList players={players} />
     </div>
   );
