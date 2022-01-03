@@ -1,0 +1,10 @@
+.player-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.players-list {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
