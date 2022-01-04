@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correct player when clicked 1`] = `
+<div>
+  <div
+    class="player-deets"
+  >
+    <p>
+      Buster Rimes
+    </p>
+    <div
+      class="player-details"
+    >
+      <p>
+        Position: 
+        Shortstop
+      </p>
+    </div>
+  </div>
+</div>
+`;

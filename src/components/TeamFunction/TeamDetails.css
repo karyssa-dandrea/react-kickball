@@ -1,0 +1,6 @@
+.team-details {
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  font-family: 'Poppins', sans-serif;
+}
