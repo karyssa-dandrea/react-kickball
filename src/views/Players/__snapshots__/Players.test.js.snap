@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render list of players 1`] = `
+<div>
+  <div>
+    <h1>
+      List of Players
+    </h1>
+    <div
+      class="players-list"
+    >
+      <a
+        href="/players/2"
+      >
+        Hans Olo
+      </a>
+      <a
+        href="/players/3"
+      >
+        Ron Long
+      </a>
+      <a
+        href="/players/4"
+      >
+        Shorty Biggum
+      </a>
+      <a
+        href="/players/5"
+      >
+        Gary Coolman
+      </a>
+      <a
+        href="/players/6"
+      >
+        Terry Cruise
+      </a>
+      <a
+        href="/players/7"
+      >
+        Bud E. Guy
+      </a>
+      <a
+        href="/players/8"
+      >
+        Buster Rimes
+      </a>
+      <a
+        href="/players/9"
+      >
+        Deb E. Downer
+      </a>
+      <a
+        href="/players/10"
+      >
+        Jayne Phonda
+      </a>
+      <a
+        href="/players/11"
+      >
+        Kara Whollot
+      </a>
+      <a
+        href="/players/12"
+      >
+        Betty Grey
+      </a>
+      <a
+        href="/players/13"
+      >
+        Dwayne Elizondo Mountain Dew Herbert Camacho
+      </a>
+      <a
+        href="/players/14"
+      >
+        Joe Bauers
+      </a>
+      <a
+        href="/players/15"
+      >
+        Frito P.
+      </a>
+      <a
+        href="/players/1"
+      >
+        Bennie Jetts
+      </a>
+    </div>
+  </div>
+</div>
+`;
