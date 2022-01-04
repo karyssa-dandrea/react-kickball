@@ -12,6 +12,7 @@ export default function Teams() {
     };
     fetchData();
   }, []);
+  // hi
   return (
     <div>
       <h1>Teams</h1>
