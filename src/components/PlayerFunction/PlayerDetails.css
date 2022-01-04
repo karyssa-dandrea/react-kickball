@@ -1,10 +1,19 @@
+body {
+  background-color: #ccaf9b;
+  color: #312921;
+  font-family: 'Poppins', sans-serif;
+}
+
 .player-details {
   display: flex;
   flex-direction: column;
+  font-family: 'Poppins', sans-serif;
 }
 
 .players-list {
   display: flex;
   flex-direction: column;
   padding: 10px;
+  font-size: large;
+  font-family: 'Poppins', sans-serif;
 }
